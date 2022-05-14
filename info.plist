@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>li.klass.walkingpad-alfred</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>6F2A9EC1-FE1F-44FB-AD53-931D0033C407</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>19A0EDC8-35BB-4408-BABF-2977D8244E44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Matthias Klaß</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>WalkingPad Alfred Client</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>set -xe
+curl -s -X POST "http://localhost:4934{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>19A0EDC8-35BB-4408-BABF-2977D8244E44</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"1,5 km\/h","arg":"\/treadmill\/speed\/15","subtitle":""},{"title":"2,0 km\/h","arg":"\/treadmill\/speed\/20"},{"title":"2,5 km\/h","arg":"\/treadmill\/speed\/25"},{"title":"3,0 km\/h","arg":"\/treadmill\/speed\/30"},{"title":"3,5 km\/h","arg":"\/treadmill\/speed\/35"},{"title":"4,0 km\/h","arg":"\/treadmill\/speed\/40"},{"title":"4,5 km\/h","arg":"\/treadmill\/speed\/45"},{"title":"5,0 km\/h","arg":"\/treadmill\/speed\/50"},{"title":"5,5 km\/h","arg":"\/treadmill\/speed\/55"},{"title":"6,0 km\/h","arg":"\/treadmill\/speed\/60"},{"title":"6,5 km\/h","arg":"\/treadmill\/speed\/65"},{"title":"7,0 km\/h","arg":"\/treadmill\/speed\/70"},{"title":"7,5 km\/h","arg":"\/treadmill\/speed\/75"},{"title":"8,0 km\/h","arg":"\/treadmill\/speed\/80"},{"title":"Start","arg":"\/treadmill\/start"},{"title":"Stop","arg":"\/treadmill\/stop"},{"title":"Faster","arg":"\/treadmill\/faster"},{"title":"Slower","arg":"\/treadmill\/slower"}]</string>
+				<key>keyword</key>
+				<string>w</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Command</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>6F2A9EC1-FE1F-44FB-AD53-931D0033C407</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>19A0EDC8-35BB-4408-BABF-2977D8244E44</key>
+		<dict>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>525</integer>
+		</dict>
+		<key>6F2A9EC1-FE1F-44FB-AD53-931D0033C407</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>525</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
